@@ -2,8 +2,11 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Notes.Views;
+using Notes.Views.Note;
+using Notes.Views.RouteMap;
 using Prism.DryIoc;
 using Prism.Ioc;
+using Prism.Regions;
 
 namespace Notes
 {
@@ -47,7 +50,9 @@ namespace Notes
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterForNavigation<NoteView>();
+            containerRegistry.RegisterForNavigation<RouteMapView>();
+            containerRegistry.RegisterForNavigation<StartMenuView>();
         }
     }
 }

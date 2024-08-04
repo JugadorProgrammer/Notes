@@ -3,13 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             xmlns:vm="clr-namespace:Notes.ViewModels;assembly=Notes"
+             xmlns:vm="clr-namespace:Notes.ViewModels.RouteMap;assembly=Notes"
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
-             x:DataType="vm:MainViewModel"
-             x:CompileBindings="True"
-             x:Class="Notes.Views.MainView">
-  
-  <ContentControl prism:RegionManager.RegionName="ContentRegion" />
-  
+             x:DataType="vm:RouteMapFillViewModel"
+             x:Class="Notes.Views.RouteMapFillView">
+
 </UserControl>
